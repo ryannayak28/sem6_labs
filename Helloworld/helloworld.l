@@ -1,0 +1,16 @@
+%option noyywrap
+%{
+	#include<stdio.h>
+%}
+
+%%
+"hello world" {printf("GOOD BYE \n");}
+.		;
+%%
+int main()
+{
+yylex();
+return 0;
+}
+
+
